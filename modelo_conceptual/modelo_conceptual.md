@@ -79,5 +79,28 @@ Un `atributo derivado` es un `atributo definido` en terminos de otros `atributos
 
 ### Asociaciones derivadas
 
-Una `asociación derivada` es una `asociación definida` en términos de otras `asociaciones` en las que participa el `objeto conceptual`
+Una `asociación derivada` es una `asociación definida` en términos de otras `asociaciones` en las que participa el `objeto conceptual`.
 
+### Asociación ordenada
+
+Cuando una asociación asigna una única instancia de origen.
+
+---
+
+## Reglas heurísticas para construir modelos conceptuales
+
+### ¿Entidad o atributo?
+
+¿El `Autor` de un libro es una `entidad` o un `atributo` de `Libro`?
+
+Si queremos especializar Autor o agregar atributos, entonces necesitamos convertirlo en una entidad en lugar de un atributo de Libro.
+
+### ¿Atributo de una entidad o de una asociación?
+
+La `fecha` de un `Libro` deberíamos escribirla en el atributo `DatBorrowed` o en la entidad `BookCopy`
+
+Escriba el atributo en una asociación cuando este caracterice directa o indirectamente a todos los participantes.
+
+---
+
+Fuente: Requirements Engineering: From System Goals to UML Models to Software Specificactions.
